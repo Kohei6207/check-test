@@ -46,7 +46,7 @@ class ContactController extends Controller
 
         $request->session()->forget('contact');
 
-        return view('user.thanks');
+        return view('thanks');
     }
 }
 
