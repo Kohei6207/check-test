@@ -18,3 +18,7 @@ Route::get('/create', [ContactController::class, 'create'])->name('contacts.crea
 Route::get('/edit', [ContactController::class, 'edit'])->name('contacts.edit');
 Route::post('/confirm', [ContactController::class, 'confirm'])->name('contacts.confirm');
 Route::post('/store', [ContactController::class, 'store'])->name('contacts.store');
+
+//検索画面
+Route::get('/stock', [ContactController::class, 'stock'])->name('contacts.stock');
+Route::delete('stock/delete/{id}', [ContactController::class, 'delete'])->name('contacts.delete');

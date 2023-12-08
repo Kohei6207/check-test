@@ -1,3 +1,6 @@
+/*--------------------------------------------------
+タイトル
+--------------------------------------------------*/
 .header__logo{
     text-align: center;
 }
@@ -8,6 +11,9 @@
     max-width: 1230px;
 }
 
+/*--------------------------------------------------
+入力フォーム
+--------------------------------------------------*/
 .form{
     margin: 0 auto;
     width: 70%;
@@ -20,8 +26,16 @@
     margin-bottom: 15px;
 }
 
+
+.form__group-title {
+    padding-top: 10px ;
+}
+
 .form__label--required{
-    color: red;
+    margin-left: 5px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #ff0000;
 }
 
 .form__ex{
@@ -29,10 +43,10 @@
     color: gainsboro;
 }
 
-.form__ex-name {
-    margin-right: 200px;
-    color: gainsboro;
-}
+
+/*--------------------------------------------------
+名前
+--------------------------------------------------*/
 
 .form__input-name {
     display: flex;
@@ -57,23 +71,9 @@
     color: darkgrey;
 }
 
-.form__input--text{
-    padding: 10px;
-    width: 675px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-
-    appearance: none;
-}
-
-.form__input--textarea{
-    padding: 10px;
-    width: 675px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    appearance: none;
-}
-
+/*--------------------------------------------------
+性別
+--------------------------------------------------*/
 .form__group-content--radio {
     width: 80%;
     display: flex;
@@ -89,4 +89,25 @@ input[type="radio"]{
 
 .input__radio{
     margin-left: 10px;
+}
+
+/*--------------------------------------------------
+メールアドレスとか
+--------------------------------------------------*/
+
+.form__input--text {
+    padding: 10px;
+    width: 675px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    appearance: none;
+}
+
+.form__input--textarea textarea{
+    padding: 10px;
+    width: 675px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
 }

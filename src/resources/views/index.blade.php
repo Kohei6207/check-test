@@ -25,6 +25,27 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
+                        <div class="form__input-name">
+                            <input type="text" name="last-name" value="{{ old('last-name') }}" />
+                            <input type="text" name="first-name" value="{{ old('first-name') }}" />
+                        </div>
+                        <div class="form__input-name">
+                            <label for="last-name">例）山田</label>
+                            <label for="first-name">例）太郎</label>
+                        </div>
+                        <div class="form__input-name">
+                            <div class="form__error">
+                                @error('last-name')
+                                {{ $message }}
+                                @enderror
+                            </div>
+                            <div class="form__error">
+                                @error('first-name')
+                                {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <!--修正前(あとで削除する)
                         <div class="form__input--text-last-name">
                             <input type="text" name="last-name" value="{{ old('last-name') }}" />
                             <p class="form__ex-name">例）山田</p>
@@ -45,6 +66,7 @@
                             {{ $message }}
                             @enderror
                         </div>
+                        ここまで修正前-->
                     </div>
                 </div>
 
@@ -54,10 +76,10 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content--radio">
-                        <input type="radio" id="male" name="gender" value="男性" checked>
+                        <input class="input__radio-ale" type="radio" id="male" name="gender" value="1" checked>
                         <label class="input__radio" for="male">男性</label>
 
-                        <input type="radio" id="female" name="gender" value="女性">
+                        <input class="input__radio-female" type="radio" id="female" name="gender" value="2">
                         <label class="input__radio" for="female">女性</label>
                     </div>
                 </div>
@@ -86,10 +108,10 @@
                     </div>
                     <div class="form__group-content">
                         <span class="form__label--postal-symbol">〒</span>
-                        <input class="form__input--text" type="text" name="postal-code" value="{{ old('postal-code') }}" />
+                        <input class="form__input--text" type="text" name="postcode" value="{{ old('postcode') }}" />
                         <p class="form__ex">例）123-4567</p>
                         <div class="form__error">
-                            @error('postal-code')
+                            @error('postcode')
                             {{ $message }}
                             @enderror
                         </div>
@@ -102,10 +124,10 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <input class="form__input--text" type="text" name="home-address" value="{{ old('home-address') }}" />
+                        <input class="form__input--text" type="text" name="address" value="{{ old('address') }}" />
                         <p class="form__ex">例）東京都渋谷区千代田区1-2-3</p>
                         <div class="form__error">
-                            @error('home-address')
+                            @error('address')
                             {{ $message }}
                             @enderror
                         </div>
@@ -117,7 +139,7 @@
                         <span class="form__label--item">建物名</span>
                     </div>
                     <div class="form__group-content">
-                        <input class="form__input--text" type="text" name="building">
+                        <input class="form__input--text" type="text" name="building_name">
                         <p class="form__ex">例）千駄ヶ谷マンション101</p>
                     </div>
                 </div>
@@ -129,10 +151,10 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--textarea">
-                            <textarea name="content" cols="30" rows="4"></textarea>
+                            <textarea name="opinion" cols="30" rows="4"></textarea>
                         </div>
                         <div class="form__error">
-                            @error('content')
+                            @error('opinion')
                             {{ $message }}
                             @enderror
                         </div>

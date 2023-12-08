@@ -27,9 +27,9 @@ class ContactRequest extends FormRequest
             'last-name' => ['required','string','max:255'],
             'first-name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'postal-code' => ['required', 'numeric'],
-            'home-address' => ['required', 'string', 'max:255'],
-            'content' => ['required', 'string','max:120'],
+            'postcode' => ['required', 'numeric'],
+            'address' => ['required', 'string', 'max:255'],
+            'opinion' => ['required', 'string','max:120'],
         ];
     }
     public function messages()
@@ -45,14 +45,14 @@ class ContactRequest extends FormRequest
             'email.string' => 'メールアドレスを文字列で入力してください',
             'email.email' => '有効なメールアドレス形式を入力してください',
             'email.max' => 'メールアドレスを255文字以下で入力してください',
-            'postal-code.required' => '郵便番号を入力してください',
-            'postal-code.numeric' => '郵便番号を数値で入力してください',
-            'home-address.required' => '住所を入力してください',
-            'home-address.string' => '住所を文字列で入力してください',
-            'home-address.max' => '住所を255文字以下で入力してください',
-            'content.required' => 'ご意見を入力してください',
-            'content.string' => 'ご意見を文字列で入力してください',
-            'content.max' => 'ご意見を120文字以下で入力してください',
+            'postcode.required' => '郵便番号を入力してください',
+            'postcode.numeric' => '郵便番号を数値で入力してください',
+            'address.required' => '住所を入力してください',
+            'address.string' => '住所を文字列で入力してください',
+            'address.max' => '住所を255文字以下で入力してください',
+            'opinion.required' => 'ご意見を入力してください',
+            'opinion.string' => 'ご意見を文字列で入力してください',
+            'opinion.max' => 'ご意見を120文字以下で入力してください',
         ];
     }
 }

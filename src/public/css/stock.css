@@ -1,0 +1,10 @@
+.confirm-table__inner,th, td {
+    border: none;
+}
+.confirm-table__inner, th {
+    border-bottom: 1px solid #ddd;
+    /* 任意の線の色と太さに設定 */
+}
+.confirm-header--id{
+    width: 10px;
+}

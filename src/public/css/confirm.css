@@ -1,0 +1,52 @@
+/*--------------------------------------------------
+タイトル
+--------------------------------------------------*/
+.header__logo {
+    text-align: center;
+}
+
+
+/*-------------------------------------------------- 表示フォーム --------------------------------------------------*/
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.confirm-table__header{
+    text-align: left;
+}
+
+.confirm-table__text {
+    font-size: 18px;
+    padding: 30px 60px;
+
+}
+.confirm-table__text input{
+        font-size: 18px;
+        border: none;
+}
+
+/*-------------------------------------------------- 送信ボタン --------------------------------------------------*/
+
+.form__button-submit {
+    font-size: 18px;
+        /* 任意のフォントサイズを設定 */
+    padding: 10px 40px;
+    /* パディングを調整してボタンのサイズを大きくする */
+    background-color: black;
+    /* 背景色を黒色に設定 */
+    color: white;
+    /* テキスト色を白色に設定 */
+    border: none;
+    /* ボーダーをなくす */
+    cursor: pointer;
+    /* カーソルをポインターに変更 */
+    border-radius: 5px;
+    /* ボーダーの角を丸くする（任意の値を設定） */
+}
+
+.form__button-submit:hover {
+    background-color: darkgray;
+    /* ホバー時の背景色を変更 */
+}
