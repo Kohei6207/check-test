@@ -9,7 +9,7 @@ php 7.4.9
 java script
 
 ## ER図
-![ER Image] (image/ER.png)
+![ER](https://github.com/Kohei6207/check-test/assets/126489648/895edcc4-7ae6-414a-83d3-15061fdba521)
 
 ## URL
 開発環境：http://localhost/
